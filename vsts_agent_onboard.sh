@@ -10,9 +10,9 @@ cd ..
 sudo chmod -R o+w $2/myagent
 cd $2/myagent
 #Install dependencies
-./bin/installdependencies.sh
+sudo ./bin/installdependencies.sh
 #Configure agent
-./config.sh --unattended --url $3 --auth $4 --token $1 --pool $5 --agent $(hostname) --runAsService
+./config.sh --unattended --url $3 --auth $4 --token $1 --pool $5 --agent $(hostname) --runAsService --acceptTeeEula
 sudo ./svc.sh install 
 sudo ./svc.sh start 
 sudo ./svc.sh status
