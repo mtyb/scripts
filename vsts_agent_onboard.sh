@@ -13,6 +13,6 @@ cd $2/myagent
 sudo ./bin/installdependencies.sh
 #Configure agent
 ./config.sh --unattended --url $3 --auth $4 --token $1 --pool $5 --agent $(hostname) --runAsService --acceptTeeEula
-sudo ./svc.sh install 
-sudo ./svc.sh start 
-sudo ./svc.sh status
+./svc.sh install 
+./svc.sh start 
+./svc.sh status
