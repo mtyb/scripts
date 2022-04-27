@@ -1,4 +1,5 @@
 cd /
+export AGENT_ALLOW_RUNASROOT="1"
 #create installation directory
 sudo mkdir myagent
 sudo chmod -R o+w myagent
