@@ -10,5 +10,5 @@ sudo tar zxvf *.tar.gz
 #Install dependencies
 /myagent/bin/installdependencies.sh
 #Configure agent
-/myagent/config.sh --unattended --token $1 --url $2 --auth $3 --pool $4 --runAsService --acceptTeeEula
+/myagent/config.sh --unattended --token $1 --url $2 --auth $3 --pool $4 --runAsService --acceptTeeEula --replace
 /myagent/run.sh &
