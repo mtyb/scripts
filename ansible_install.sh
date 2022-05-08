@@ -11,4 +11,4 @@ rpm --import http://opensource.wandisco.com/RPM-GPG-KEY-WANdisco
 yum install git -y
 yum install python3 python3-pip python-setuptools python-yaml gcc python-dev libkrb5-dev sshpass -y
 pip3 install --upgrade pip
-pip3 install ansible[azure] pywinrm[credssp]
+pip3 install ansible[azure]==2.9.10 pywinrm[credssp]
