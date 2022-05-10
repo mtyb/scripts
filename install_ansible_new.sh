@@ -14,3 +14,5 @@ yum install python3 python3-pip python-setuptools python-yaml gcc python-dev lib
 pip3 install --upgrade pip
 pip install -r https://raw.githubusercontent.com/ansible-collections/azure/dev/requirements-azure.txt
 pip3 install ansible pywinrm[credssp]
+pip3 uninstall -y cryptography
+pip3 install cryptography==36.0.2
