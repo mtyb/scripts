@@ -1,7 +1,7 @@
 # install EPEL repo
-dnf install epel-release -y
+yum install epel-release -y
 # install ansible and other dependencies
-dnf install ansible openssl python39-winrm.noarch python39-jmespath -y
+yum install ansible openssl python39-winrm.noarch python39-jmespath -y
 # install CredSSP package
 pip3 install requests-credssp
 # install community.windows collection
