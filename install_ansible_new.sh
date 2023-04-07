@@ -1,6 +1,3 @@
-
-yum update -y
-yum upgrade -y
 cat > /etc/yum.repos.d/WANdisco-git.repo << EOF
 [WANdisco-git]
 name=WANdisco Git
