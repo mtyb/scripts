@@ -13,4 +13,5 @@ pip install -r https://raw.githubusercontent.com/ansible-collections/azure/dev/r
 pip3 install ansible pywinrm[credssp]
 pip3 uninstall -y cryptography
 pip3 install cryptography==36.0.2
-dnf install https://github.com/PowerShell/PowerShell/releases/download/v7.3.3/powershell-7.3.3-1.rh.x86_64.rpm
+curl https://packages.microsoft.com/config/rhel/8/prod.repo | sudo tee /etc/yum.repos.d/microsoft.repo
+sudo dnf install -y powershell
